@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    <title>JQuery Learning</title>
+</head>
+
+<body>
+
+    <div class="w-6/12 md:w-5/12  mt-10 md:mt-24 mx-auto">
+        <input type="text" class="w-full h96 text-slate-600 text-end" readonly placeholder="Calculate" id="clac">
+        <div class="">
+            <div class="grid grid-cols-4 gap-1 mt-1">
+                <input type="button"
+                    class="bg-rose-200 hover:bg-black hover:text-white text-center cursor-pointer rounded-sm px-2"
+                    value="C" onclick="clearInpt()">
+                <input type="button"
+                    class="bg-rose-200 hover:bg-black hover:text-white text-center cursor-pointer rounded-sm px-2"
+                    value="+/-">
+                <input type="button"
+                    class="bg-rose-200 hover:bg-black hover:text-white text-center cursor-pointer rounded-sm px-2"
+                    value="%" onclick="insertNumber('%')">
+                <input type="button" class="bg-cyan-300 hover:bg-cyan-500 text-center cursor-pointer rounded-sm px-2"
+                    value="/" onclick="insertNumber('/')">
+            </div>
+            <div class="grid grid-cols-4 gap-1 mt-1">
+                <input type="button"
+                    class="bg-rose-200 hover:bg-black hover:text-white text-center cursor-pointer rounded-sm px-2"
+                    value="7" onclick="insertNumber(7)">
+                <input type="button"
+                    class="bg-rose-200 hover:bg-black hover:text-white text-center cursor-pointer rounded-sm px-2"
+                    value="8" onclick="insertNumber(8)">
+                <input type="button"
+                    class="bg-rose-200 hover:bg-black hover:text-white text-center cursor-pointer rounded-sm px-2"
+                    value="9" onclick="insertNumber(9)">
+                <input type="button" class="bg-cyan-300 hover:bg-cyan-500 text-center cursor-pointer rounded-sm px-2"
+                    value="x" onclick="insertNumber('*')">
+            </div>
+            <div class="grid grid-cols-4 gap-1 mt-1">
+                <input type="button"
+                    class="bg-rose-200 hover:bg-black hover:text-white text-center cursor-pointer rounded-sm px-2"
+                    value="4" onclick="insertNumber(4)">
+                <input type="button"
+                    class="bg-rose-200 hover:bg-black hover:text-white text-center cursor-pointer rounded-sm px-2"
+                    value="5" onclick="insertNumber(5)">
+                <input type="button"
+                    class="bg-rose-200 hover:bg-black hover:text-white text-center cursor-pointer rounded-sm px-2"
+                    value="6" onclick="insertNumber(6)">
+                <input type="button" class="bg-cyan-300 hover:bg-cyan-500 text-center cursor-pointer rounded-sm px-2"
+                    value="-" onclick="insertNumber('-')">
+            </div>
+            <div class="grid grid-cols-4 gap-1 mt-1">
+                <input type="button"
+                    class="bg-rose-200 hover:bg-black hover:text-white text-center cursor-pointer rounded-sm px-2"
+                    value="1" onclick="insertNumber(1)">
+                <input type="button"
+                    class="bg-rose-200 hover:bg-black hover:text-white text-center cursor-pointer rounded-sm px-2"
+                    value="2" onclick="insertNumber(2)">
+                <input type="button"
+                    class="bg-rose-200 hover:bg-black hover:text-white text-center cursor-pointer rounded-sm px-2"
+                    value="3" onclick="insertNumber(3)">
+                <input type="button" class="bg-cyan-300 hover:bg-cyan-500 text-center cursor-pointer rounded-sm px-2"
+                    value="+" onclick="insertNumber('+')">
+            </div>
+            <div class="grid grid-cols-4 gap-1 mt-1">
+                <input type="button"
+                    class="bg-rose-200 hover:bg-black hover:text-white text-center cursor-pointer rounded-sm px-2"
+                    value="0" onclick="insertNumber(0)">
+                <input type="button"
+                    class="bg-rose-200 hover:bg-black hover:text-white text-center cursor-pointer rounded-sm px-2"
+                    value="." onclick="insertNumber('.')">
+                <input type="button"
+                    class="bg-rose-200 hover:bg-black hover:text-white text-center cursor-pointer rounded-sm px-2"
+                    value="DEL" onclick="deleteinp()">
+                <input type="button"
+                    class="bg-yellow-300 hover:bg-yellow-500 hover:text-white text-center cursor-pointer rounded-sm px-2"
+                    value="=" onclick="calculate()">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

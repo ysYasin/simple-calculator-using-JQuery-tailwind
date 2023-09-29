@@ -1,0 +1,12 @@
+img {
+    width: 200px;
+    margin: 2rem;
+    display: block;
+    padding: 1rem;
+    background: #000;
+}
+
+button {
+    margin-left: 3rem;
+    cursor: pointer;
+}
